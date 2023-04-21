@@ -5,6 +5,7 @@ import fr.simplon.vote_restfull.entity.Vote;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.List;
 @Valid
 @RestController
@@ -14,8 +15,8 @@ public class VoteController {
     public VoteController(VoteRepository fr) {
          this.repo = fr;
 
-         //this.repo.save(new Vote("achat d'une console pour le foyer","Qu'elle console on met ?", LocalDate.now(), LocalDate.of(2023,5,17), "Michel"));
-         //this.repo.save(new Vote("Choix du repas de la semaine","Pizza ? mardi", LocalDate.now(), LocalDate.of(2023,6,18), "Mélanie"));
+         //this.repo.save(new Vote("Cette été","BBQ lundi midi, c'est bon pour toi ?", LocalDate.now(), LocalDate.of(2023,5,17), "Michel"));
+         //this.repo.save(new Vote("Machine à café ","Vous aimez le café ?", LocalDate.now(), LocalDate.of(2023,6,18), "Mélanie"));
     }
 
 
